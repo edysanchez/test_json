@@ -1,0 +1,13 @@
+{
+  "name": "test-json",
+  "version": "0.0.1",
+  "description": "test with JS and JSON",
+  "private":"true",
+  "author":{"name":"Edgar Sanchez","email":"edysanchez@gmail.com"},
+  "devDependencies": {
+      "bower":"latest",
+      "grunt": "latest",
+      "grunt-contrib-jshint":"latest",
+      "grunt-contrib-watch":"latest"
+  }
+}
