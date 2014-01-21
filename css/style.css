@@ -1,0 +1,51 @@
+body{
+	margin:0
+}
+
+#wrapper{
+	width:1024px;
+	margin:0 auto
+}
+
+.left{
+	float:left;
+}
+
+.right{
+	float:right;
+}
+
+div{
+	width:150px;
+	height:150px;
+	margin-left:90px;
+}
+.azul{
+	background:#7fc5fb;
+	opacity:0;
+}
+.rojo{
+	background:#ee5353;
+	opacity:0;
+}
+.verde{
+	background:#32b65d;
+	opacity:0;
+}
+
+.main-list li {
+    display: inline;
+    margin: 10px;
+}
+.main-list li a{
+   text-decoration: none;
+}
+.home a{
+	color:#7fc5fb;
+}
+.contact a{
+	color:#ee5353;
+}
+.about a{
+	color:#32b65d;
+}
