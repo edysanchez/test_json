@@ -1,0 +1,9 @@
+{
+  "name": "test-json",
+  "version": "0.0.1",
+  "description": "test with JS and JSON",
+  "devDependencies": {
+    "jquery": "1.10.1",
+    "qunit": "~1.13.0"
+  }
+}
