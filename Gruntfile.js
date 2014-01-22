@@ -27,16 +27,28 @@
                     }
                 }
             }},
+            casperjs:{
+                options:{casperjsOptions: ['--verbose','--log-level=debug']},
+                files:['test/casper/casper.js']
+            },
+            'http-server':{
+            dev:{
+            root:'.',
+            port:8282,
+            host:"127.0.0.1",
+            runInBackround:true
+            }
+            },
             watch:{
                 jshint:{
-                    files:'js/*.js',
+                    files:['Gruntfile.js','js/*.js','test/casper/casper.js'],
                     tasks:'jshint'
                 }
             }
         });
                grunt.loadNpmTasks('grunt-contrib-jshint');
                grunt.loadNpmTasks('grunt-contrib-watch');
-               grunt.loadNpmTasks('grunt-bower-task');
+               grunt.loadNpmTasks('grunt-casperjs');
+               grunt.loadNpmTasks('grunt-http-server');
                grunt.registerTask('default','jshint');
-
     };
