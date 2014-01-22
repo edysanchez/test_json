@@ -17,6 +17,7 @@
                     boss: true,
                     eqnull: true,
                     browser: true,
+                    jquery:true,
                     globals: {
                         require: true,
                         define: true,
