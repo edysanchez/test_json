@@ -11,6 +11,11 @@ function generateJSONMenu(url,menuListSelector) {
             createMenuItem(menuListSelector,data[dataI]);
     }});
 }
+function initialAnimation() {
+    $("div>div").fadeTo(1,30);
+    $(".left , .right").animate({"margin-left":0},5000);
+}
 function init() {
     generateJSONMenu('js/menu.json',".main-list");
+    initialAnimation();
 }
