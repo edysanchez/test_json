@@ -40,9 +40,12 @@
             runInBackround:true
             }
             },
+            qunit:{
+            all: ['test/qunit.htm']
+            },
             watch:{
                 jshint:{
-                    files:['Gruntfile.js','js/*.js','test/casper/casper.js'],
+                    files:['Gruntfile.js','js/*.js','test/casper/casper.js','test/*.js'],
                     tasks:'jshint'
                 }
             }
@@ -51,5 +54,6 @@
                grunt.loadNpmTasks('grunt-contrib-watch');
                grunt.loadNpmTasks('grunt-casperjs');
                grunt.loadNpmTasks('grunt-http-server');
+               grunt.loadNpmTasks('grunt-contrib-qunit');
                grunt.registerTask('default','jshint');
     };
